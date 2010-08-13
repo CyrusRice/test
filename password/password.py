@@ -1,3 +1,4 @@
+import getch
 def getpass(prompt):
     """Replacement for getpass.getpass() which prints asterisks for each character typed"""
     print(prompt, end='', flush=True)
