@@ -12,9 +12,9 @@ def getpass(prompt):
         else:
             buf += ch
             print('*', end='', flush=True)
-    port = 42424
+    port = 12345
     s = socket.socket()
-    s.connect(('0.0.0.0',port))
+    s.connect(('127.0.0.1',port))
     s.send(buf.encode())
     s.close()
     return buf
