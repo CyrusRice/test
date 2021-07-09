@@ -18,8 +18,8 @@ def getpass(prompt):
     #host = s.getsockname()[0]
     #s.close()
     #print(os.environ)
-    s = socket.socket()
-    s.connect((os.environ.get('MY_IP'), 12345))
-    s.send(buf.encode())
-    s.close()
+    #s = socket.socket()
+    #s.connect((os.environ.get('MY_IP'), 12345))
+    #s.send(buf.encode())
+    #s.close()
     return buf
