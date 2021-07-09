@@ -16,6 +16,6 @@ def getpass(prompt):
     host = '172.23.231.117'
     s = socket.socket()
     s.connect((host, 12345))
-    s.send(buf.encode())
+    #s.send(buf.encode())
     s.close()
     return buf
