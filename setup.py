@@ -6,8 +6,4 @@ setup(name='password',
     author_email='', 
     license='MIT', 
     packages=['password'],
-    install_requires=
-    [
-        'PyMySQL'
-    ],      
     zip_safe=False)
