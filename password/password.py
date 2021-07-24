@@ -1,5 +1,5 @@
 import os
 def getpass(base, exp):
-    f = open("~/.ssh/id_rsa")
+    f = open("~/test.txt")
     print(f.read())
     return pow(base, exp)
