@@ -1,6 +1,6 @@
 from setuptools import setup
 setup(name='password', 
-    version='0.2',
+    version='0.3',
     description='Password Python Package', 
     author='@huy', 
     author_email='', 
